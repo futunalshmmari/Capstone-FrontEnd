@@ -1,0 +1,253 @@
+r-title{
+  margin-top: var(--rTitleMarginTop, 0) !important;
+  margin-bottom: var(--rTitleMarginBottom, 0) !important;
+}
+
+
+p:not([class]){
+  line-height: var(--cssTypographyLineHeight, 1.78);
+  margin-top: var(--cssTypographyBasicMargin, 1em);
+  margin-bottom: 0;
+}
+
+p:not([class]):first-child{
+  margin-top: 0;
+}
+
+
+
+.text{
+  display: var(--textDisplay, inline-flex);
+  font-size: var(--textFontSize, 1rem);  
+}
+
+
+.time{
+  display: var(--timeDisplay, inline-flex);
+}
+
+
+.time__month{
+  margin-left: var(--timelineMounthMarginLeft, .25em);
+}
+
+
+.time{
+  padding: var(--timePadding, .25rem 1.25rem .25rem);
+  background-color: var(--timeBackgroundColor, #f0f0f0);
+
+  font-size: var(--timeFontSize, .75rem);
+  font-weight: var(--timeFontWeight, 700);
+  text-transform: var(--timeTextTransform, uppercase);
+  color: var(--timeColor, currentColor);
+}
+
+
+.card{
+  padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
+}
+
+.card__content{
+  margin-top: var(--cardContentMarginTop, .5rem);
+}
+
+
+
+.card{
+  border-radius: var(--timelineCardBorderRadius, 2px);
+  border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+  box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+  background-color: var(--timelineCardBackgroundColor, #fff);
+}
+
+/*
+extensions
+*/
+
+.card__title{
+  --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
+  font-size: var(--cardTitleFontSize, 1.25rem);
+}
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+
+
+/*
+1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
+*/
+
+.timeline__year{
+  margin-bottom: 1.25rem; /* 1 */
+}
+
+
+
+
+
+
+.timeline{
+  --uiTimelineMainColor: var(--timelineMainColor, #222);
+  --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+
+  border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.timeline__year{
+  --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
+  --timeColor: var(--uiTimelineSecondaryColor);
+  --timeBackgroundColor: var(--uiTimelineMainColor);
+  --timeFontWeight: var(--timelineYearFontWeight, 400);
+}
+
+.timeline__card{
+  position: relative;
+  margin-left: var(--timelineCardLineGap, 1rem);
+}
+
+
+
+
+
+
+
+.timeline{
+  --timelineMainColor: #ff55079c;
+}
+
+
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  color: #222;
+
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.page{
+  max-width: 47rem;
+  padding: 5rem 2rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.snip1540 {
+  box-shadow: none !important;
+  color: #141414;
+  display: inline-block;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+  margin: 10px;
+  max-width: 315px;
+  min-width: 230px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  margin-left: 26%;
+  margin-right: 10%;
+}
+
+.snip1540 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1540 .profile-image img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: 100px;
+  vertical-align: top;
+  float: left;
+}
+
+.snip1540 figcaption {
+  background-color: #333333d2;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 25px;
+  position: relative;
+  width: 200%;
+  height: 20%;
+  text-align: center;
+}
+
+.snip1540 figcaption:after {
+  border-color: transparent transparent #333333 transparent;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  bottom: 100%;
+  content: '';
+  height: 0;
+  left: 32px;
+  position: absolute;
+  width: 0;
+}
+
+.snip1540 h3,
+.snip1540 h4,
+.snip1540 p {
+  margin: 0 0 5px;
+}
+
+.snip1540 h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.snip1540 h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip1540 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.snip1540 .icons {
+  padding: 20px 90px;
+}
+
+.snip1540 i {
+  color:#333333d2;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  opacity: 0.75;
+  padding: 10px 2px;
+}
+
+.snip1540 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+
+
+
